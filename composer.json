@@ -1,0 +1,21 @@
+{
+    "name": "ltj/pptgo",
+    "description": "适配pptgo的php库",
+    "minimum-stability": "stable",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ltj\\pptgo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "LONG-TJ",
+            "email": "2280385683@qq.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "7.11.0"
+    }
+}
