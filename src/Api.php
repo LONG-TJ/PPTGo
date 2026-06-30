@@ -166,17 +166,14 @@ class Api
      * 获取aigc签名
      * 获取aigc签名
      */
-    public function aigcSign()
+    public function aigcSign(string $body)
     {
         $response = $this->_client->request('POST', 'openapi/v1/ai/grant', [
             'headers' => [
                 'Authorization' => "{$this->_tokenType} {$this->_accessToken}"
             ],
             'json' => [
-                'body' => json_encode([
-                    'sequence'  => 1,
-                    'timestamp' => time()
-                ]),
+                'body' => $body,
             ],
             'http_errors' => false
         ]);
